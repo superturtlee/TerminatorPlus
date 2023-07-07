@@ -1388,7 +1388,7 @@ public class LegacyAgent extends Agent {
     }
 
     private void attack(Terminator bot, LivingEntity target, Location loc) {
-        if ((target instanceof Player && PlayerUtils.isInvincible(((Player) target).getGameMode())) || target.getNoDamageTicks() >= 5 || loc.distance(target.getLocation()) >= 4)
+        if ((target instanceof Player && PlayerUtils.isInvincible(((Player) target).getGameMode())) || target.getNoDamageTicks() >= 5 || loc.distance(target.getLocation()) >= 3)
             return;
 
         bot.attack(target);
